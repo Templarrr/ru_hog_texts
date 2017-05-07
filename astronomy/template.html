@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Астрономия 1-3</title>
+    <link rel="stylesheet" type="text/css" href="view.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.3/css/fluidbox.min.css">
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.3/js/jquery.fluidbox.min.js"></script>
+    <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+    <script type="text/javascript">
+        $(function () {
+            $('div.picture a').fluidbox();
+        });
+    </script>
+</head>
+<body>
+<div class="main">
+    <h1>Курс {{ course }}. Лекция {{ lection }}.</h1>
+    <h2>{{ topic }}</h2>
+    <p class="narrative">
+        {{ intro }}
+    </p>
+
+    <p class="lection">
+        {{ lection }}
+    </p>
+
+    <div class="formula">
+        <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+            <semantics>
+                <mrow>
+                    <mi>z</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>1</mn>
+                            <mo>-</mo>
+                            <mi>a(t)</mi>
+                        </mrow>
+                        <mrow>
+                            <mi>a(t)</mi>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </semantics>
+        </math>
+    </div>
+
+    <div class="picture">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cmbr.svg/600px-Cmbr.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cmbr.svg/600px-Cmbr.svg.png">
+        </a>
+    </div>
+
+</div>
+<div class="homework">
+    <p class="lection">
+        Домашнее задание у меня обычно будет состоять из двух частей. В теоретической я буду
+        задавать вопросы, поиск ответов на которые позволит вам узнать больше по темам затронутым в
+        лекции. В практической же вам придётся самостоятельно применять приобретённые знания и
+        умения, равно как и производить самостоятельные измерения и поиски.
+    </p>
+</div>
+
+</body>
+</html>
