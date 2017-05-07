@@ -1,0 +1,29 @@
+p {
+    font-size: 1.3em;
+    text-indent: 2em;
+}
+li {
+    font-size: 20px;
+}
+.formula {
+    font-size: 1.3em;
+}
+.narrative {
+    font-style: italic;
+}
+.spell {
+    font-style: italic;
+    font-weight: bold;
+}
+.picture {
+    text-align: center;
+}
+.picture img {
+    width:100%;
+    max-width:400px;
+}
+.homework {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
